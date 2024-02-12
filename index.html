@@ -8,6 +8,33 @@
     <title>Eat Well</title>
     <link rel="icon" href="./eatwell (1).jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+            /* This prevents horizontal scrolling */
+        }
+
+        .flex {
+            min-width: 0;
+            /* Ensure flex container can shrink */
+        }
+
+        @media (min-width: 400px) {
+            body {
+                min-width: 400px;
+                /* Set minimum width for the body */
+            }
+        }
+
+        @media (min-width: 360px) {
+            ul {
+                font-size: 14px;
+                /* Decrease font size for unordered list */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +46,7 @@
                 <h1 class="text-2xl font-bold">EATWELL</h1>
             </div>
         </header>
-        <nav class="bg-red-500 text-white p-4 flex justify-left">
+        <nav class="bg-red-500 text-white p-2 flex justify-left">
             <ul class="flex space-x-4">
                 <li class="hover:underline"><a href="#freshjuices">Fresh Juice</a></li>
                 <li class="hover:underline"><a href="#eatwell-specials">EatWell Specials</a></li>
